@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cowin_tracker">
    <application
-        android:label="cowin_tracker"
+        android:label="Cowin Tracker"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

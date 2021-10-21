@@ -1,0 +1,79 @@
+{
+    "centers": [{
+        "center_id": 562160,
+        "name": "DISTRICT HOSPITAL SIMDEGA",
+        "address": "DISTRICT HOSPITAL SIMDEGA",
+        "state_name": "Jharkhand",
+        "district_name": "Simdega",
+        "block_name": "Simdega Sadar",
+        "pincode": 835223,
+        "lat": 22,
+        "long": 84,
+        "from": "09:00:00",
+        "to": "17:00:00",
+        "fee_type": "Free",
+        "sessions": [{
+            "session_id": "56635504-5a0f-4e94-b57d-fcb696a2c575",
+            "date": "05-06-2021",
+            "available_capacity": 0,
+            "min_age_limit": 45,
+            "vaccine": "COVISHIELD",
+            "slots": ["09:00AM-11:00AM", "11:00AM-01:00PM", "01:00PM-03:00PM", "03:00PM-05:00PM"],
+            "available_capacity_dose1": 0,
+            "available_capacity_dose2": 0
+        }, {
+            "session_id": "62affd78-d42f-4040-91bf-fce61087bcb4",
+            "date": "09-06-2021",
+            "available_capacity": 0,
+            "min_age_limit": 45,
+            "vaccine": "COVISHIELD",
+            "slots": ["09:00AM-11:00AM", "11:00AM-01:00PM", "01:00PM-03:00PM", "03:00PM-05:00PM"],
+            "available_capacity_dose1": 0,
+            "available_capacity_dose2": 0
+        }, {
+            "session_id": "63a9093a-368f-479a-b308-8fedae9f7d8d",
+            "date": "09-06-2021",
+            "available_capacity": 0,
+            "min_age_limit": 18,
+            "max_age_limit": 44,
+            "vaccine": "COVISHIELD",
+            "slots": ["09:00AM-11:00AM", "11:00AM-01:00PM", "01:00PM-03:00PM", "03:00PM-05:00PM"],
+            "available_capacity_dose1": 0,
+            "available_capacity_dose2": 0
+        }]
+    }, {
+        "center_id": 557993,
+        "name": "SADAR CHC SIMDEGA",
+        "address": "SADAR HOSPITAL CAMPUS SIMDEGA",
+        "state_name": "Jharkhand",
+        "district_name": "Simdega",
+        "block_name": "Simdega Sadar",
+        "pincode": 835223,
+        "lat": 22,
+        "long": 84,
+        "from": "09:00:00",
+        "to": "17:00:00",
+        "fee_type": "Free",
+        "sessions": [{
+            "session_id": "56e03486-dcc3-4450-85f3-9cc9c8bb234a",
+            "date": "06-06-2021",
+            "available_capacity": 49,
+            "min_age_limit": 18,
+            "max_age_limit": 44,
+            "vaccine": "COVISHIELD",
+            "slots": ["09:00AM-11:00AM", "11:00AM-01:00PM", "01:00PM-03:00PM", "03:00PM-05:00PM"],
+            "available_capacity_dose1": 49,
+            "available_capacity_dose2": 0
+        }, {
+            "session_id": "a9ef9088-edc4-40a4-b7d3-5b774e206451",
+            "date": "08-06-2021",
+            "available_capacity": 49,
+            "min_age_limit": 18,
+            "max_age_limit": 44,
+            "vaccine": "COVISHIELD",
+            "slots": ["09:00AM-11:00AM", "11:00AM-01:00PM", "01:00PM-03:00PM", "03:00PM-05:00PM"],
+            "available_capacity_dose1": 49,
+            "available_capacity_dose2": 0
+        }]
+    }]
+}

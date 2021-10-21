@@ -12,8 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme : ThemeData(primarySwatch: Colors.deepPurple),
       title: 'cowin_tracker',
-      theme: ThemeData.dark(),
+      
       home: Home2(),
       routes: {
         MyHomePage.routeName: (ctx) => MyHomePage(),
@@ -33,7 +34,7 @@ class _Home2State extends State<Home2> {
     // TODO: implement initState
     super.initState();
     Timer(Duration(seconds: 3),
-        () => Navigator.of(context).pushNamed(MyHomePage.routeName));
+        () => Navigator.of(context).pushReplacementNamed(MyHomePage.routeName));
   }
 
   @override
