@@ -39,6 +39,7 @@ class _Home2State extends State<Home2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Image.asset(
         "assets/2.png",
         height: MediaQuery.of(context).size.height,

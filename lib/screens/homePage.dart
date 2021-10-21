@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:http/http.dart' as http;
+import 'dart:convert';
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key? key}) : super(key: key);
   static const String routeName = "/homePage";
@@ -7,11 +8,15 @@ class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
+var pin=TextEditingController();
+var dateString="03062021";
 
 class _MyHomePageState extends State<MyHomePage> {
-  final String apiUrl =
-      "https://cdn-api.cov-in.in/api/v2/appointment/sessions/public/calendarByPin?pincode=";
-
+  
+@override
+void initState(){
+  pin.text="835223";
+}
   TextEditingController date = new TextEditingController();
   DateTime currentDate = DateTime.now();
   Future<void> _selectDate(BuildContext context) async {
@@ -24,13 +29,20 @@ class _MyHomePageState extends State<MyHomePage> {
       setState(() {
         currentDate = pickedDate;
       });
-    print(currentDate);
+      print(currentDate);
+      dateString="${currentDate.day.toString().padLeft(2,'0')}+${currentDate.month.toString().padLeft(2,'0')}+${currentDate.year.toString()}";
   }
 
-  // Future<String> resData(String pin, String date) async {
-  //   var response = await http.get(apiUrl);
-  //   return response;
-  // }
+  Future<String> resData(String pin, String date) async {
+    final apiUrl = Uri.parse("https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=$pin&date=$dateString");
+    print('searching pin $pin');
+    var response = await http.get(apiUrl);
+    await http
+        .get(apiUrl);
+    var jsonresp = jsonDecode(response.body);
+    print(jsonresp.toString());
+    return 'GOT IT';
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -52,6 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Padding(
                   padding: const EdgeInsets.only(left: 18, right: 18),
                   child: TextField(
+                    controller: pin,
                     style: TextStyle(
                       color: Colors.black,
                     ),
@@ -84,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 RaisedButton(
                   color: Colors.deepPurple,
                   onPressed: () {
-                    // call ui api here
+                    resData(pin.text,'21102021');
                   },
                   child: Text("SEARCH"),
                 )
