@@ -1,7 +1,4 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key? key}) : super(key: key);
@@ -12,6 +9,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final String apiUrl =
+      "https://cdn-api.cov-in.in/api/v2/appointment/sessions/public/calendarByPin?pincode=";
+
   TextEditingController date = new TextEditingController();
   DateTime currentDate = DateTime.now();
   Future<void> _selectDate(BuildContext context) async {
@@ -26,6 +26,11 @@ class _MyHomePageState extends State<MyHomePage> {
       });
     print(currentDate);
   }
+
+  // Future<String> resData(String pin, String date) async {
+  //   var response = await http.get(apiUrl);
+  //   return response;
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +83,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 SizedBox(height: 20),
                 RaisedButton(
                   color: Colors.deepPurple,
-                  onPressed: () {},
+                  onPressed: () {
+                    // call ui api here
+                  },
                   child: Text("SEARCH"),
                 )
               ],
