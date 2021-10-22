@@ -7,7 +7,7 @@ and the date when u require to book the slot.
 
 This project is a starting point for a Flutter application.
 
-- [The Api Link](https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=$pin&date=$dateString)
+- [The Api Link](https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=110059&date=22102121)
 
 ## The data reutrned by the API looks like
 
@@ -30,4 +30,4 @@ This project is a starting point for a Flutter application.
 
 ## ScreenShots
 
-- [INPUT PAGE](https://i.ibb.co/xztrRm5/Whats-App-Image-2021-10-22-at-12-56-52-PM.jpg)
+- ![alt text](https://i.ibb.co/xztrRm5/Whats-App-Image-2021-10-22-at-12-56-52-PM.jpg)
