@@ -1,16 +1,33 @@
 # cowin_tracker
 
-A new Flutter project.
+A simple example of a tracker that shows data for covid-19 vaccination centres as you enter the pin code,
+and the date when u require to book the slot.
 
-## Getting Started
+## The Api Used
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+- [The Api Link](https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=$pin&date=$dateString)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## The data reutrned by the API looks like
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  {
+          "session_id": "5d70b388-f1ea-47eb-8653-5abe9199fb42",
+          "date": "24-10-2021",
+          "available_capacity": 9,
+          "min_age_limit": 18,
+          "allow_all_age": true,
+          "vaccine": "COVISHIELD",
+          "slots": [
+            "09:00AM-11:00AM",
+            "11:00AM-01:00PM",
+            "01:00PM-03:00PM",
+            "03:00PM-05:00PM"
+          ],
+          "available_capacity_dose1": 0,
+          "available_capacity_dose2": 9
+        },
+
+## ScreenShots
+
+- [INPUT PAGE](https://i.ibb.co/xztrRm5/Whats-App-Image-2021-10-22-at-12-56-52-PM.jpg)
